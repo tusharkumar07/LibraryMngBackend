@@ -5,6 +5,7 @@ import swal from 'sweetalert';
 import { useNavigate } from 'react-router-dom';
 import Header from './Header';
 import Footer from "./Footer";
+import addDataImg1 from "../img/addDataImg1.png"
 
 const AddData = () => {
     const navigate = useNavigate();
@@ -80,14 +81,15 @@ const AddData = () => {
                 <Header />
                 <div className='allData' style={{ backgroundColor: "#9EC8B9"}}>
                     <div className='main2' style={{ backgroundColor: "#5C8374" }}>
-                        <h2 className='IssueBooks' style={{ color: "white" }}>Only Admin Can Access !</h2>
+                        <h2 className='IssueBooks' style={{ color: "white" }}>Admin Pannel</h2>
+                        <img src={addDataImg1} alt="Admin Control Panel" className='imgSize'/>
                         <form onSubmit={handleLogin}>
                         <div className='formInside'>
                         <p>Password:</p>
                         <input type="password" placeholder="Enter password" value={password} onChange={(e) => setPassword(e.target.value)} />
                         </div>
                             <div className='btVerify'>
-                            <button className='btn px-4 text-white ' type="submit" style={{ backgroundColor: "#1B4242",border:"none", }}>Verify</button>
+                            <button className='btn px-4 text-white ' type="submit" style={{ backgroundColor: "#ed3320",border:"none", }}>Verify</button>
                             </div>
                         </form>
                     </div>
@@ -116,7 +118,7 @@ const AddData = () => {
                         {/* <br></br> */}
                         <p>Enter the Due Date :</p><input type="date" value={lastDate} placeholder="Due Date" className='date2' onChange={(val) => setLastDate(val.target.value)} />
                         {/* <br></br> */}
-                        <button className='btn px-5 text-white mt-3' style={{ backgroundColor: "#1B4242" }} onClick={data}>Add</button>
+                        <button className='btn px-5 text-white mt-3' style={{ backgroundColor: "#ed3320" }} onClick={data}>Add</button>
                     </form>
                 </div>
             </div>

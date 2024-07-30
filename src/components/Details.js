@@ -5,6 +5,9 @@ import swal from "sweetalert";
 import "../style/setdetails.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import detailsImg1 from "../img/detailsImg1.png";
+import detailsImg2 from "../img/detailsImg2.webp";
+import detailsImg3 from "../img/detailsImg3.webp";
 const Details = () => {
   const [details, setDetails] = useState([]);
   const [clk,setClk]=useState(false);
@@ -67,9 +70,14 @@ const Details = () => {
   return (
     <div style={{ backgroundColor: "#9EC8B9"}}>
     <Header/>
-    <div className="today">
+    {/* <div className="today">
     <h4 className="currentDate currentTime" style={{backgroundColor:"#1B4242"}}>Current Date : {currentDate}</h4>
     <h4 className="currentTime">Current Time : {currentTime}</h4>
+    </div> */}
+    <div className="imageSection">
+      <img src={detailsImg1} className="imgSec"></img>
+      <img src={detailsImg2} className="imgSec1"></img>
+      <img src={detailsImg3} className="imgSec"></img>
     </div>
     <div className="scrollBox">
   <table className="table table-striped margingT">

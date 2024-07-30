@@ -1,3 +1,6 @@
+.imgSize{
+  width: 38rem;
+}
 form input{
     margin: 1rem 1rem;
     width: 20em;
@@ -31,7 +34,7 @@ input:focus {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    padding-top: 6rem;
+    padding-top: 2rem;
 }
 .IssueBooks{
     text-align: center;
@@ -80,6 +83,11 @@ p{
 } */
 
 @media (max-width: 768px) {
+  .imgSize{
+    width: 80vw;
+    margin: auto;
+  }
+  
   .main2{
     border-radius: 10px;
     margin: 2rem 0rem;
@@ -123,7 +131,7 @@ p{
      justify-content: center;
      align-items: center;
      padding: 10px;
-     padding-top: 2.5rem;
+     padding-top: 1rem;
      padding-bottom: 2.5rem;
  }
 }

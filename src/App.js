@@ -5,7 +5,7 @@ import imgIt from "../src/img/itImg.png"
 import imgEce from "../src/img/eceImg.jpeg"
 import imgCse from "../src/img/cseImg.jpg"
 import HomeBenefits from "./components/HomeBenefits";
-// import HomeRules from "./components/HomeRules";
+import HomeRules from "./components/HomeRules";
 import Footer from "./components/Footer";
 
 function App(){
@@ -35,7 +35,7 @@ function App(){
             <HomeBenefits head="User-Friendly System" friendlySystem={friendlySystem}/>
             <HomeBenefits head="Easy-To_Manage" friendlySystem={easyManage}/>
         </div>
-        {/* <HomeRules/> */}
+        <HomeRules/>
         <Footer/>
         </div>
     )
